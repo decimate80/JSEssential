@@ -1,32 +1,32 @@
-let userRole = "CYA";
-let accessLevel;
+// let userRole = "CYA";
+// let accessLevel;
 
-if (userRole === "admin") {
-    accessLevel = "Full access granted";
-} else if (userRole === "manager") {
-    accessLevel = "Limited access granted";
-} else {
-    accessLevel = "No access granted";
-}
+// if (userRole === "admin") {
+//     accessLevel = "Full access granted";
+// } else if (userRole === "manager") {
+//     accessLevel = "Limited access granted";
+// } else {
+//     accessLevel = "No access granted";
+// }
 
-console.log(accessLevel);
-//
-let isLoggedIn = true;
-let userMessage;
+// console.log(accessLevel);
+// //
+// let isLoggedIn = true;
+// let userMessage;
 
-if (isLoggedIn) {
-    if (userRole === "admin") {
-        userMessage = "Welcome, Admin!";
-    } else {
-        userMessage = "Welcome, User!";
-    }
-} else {
-    userMessage = "Please log in to access the system.";
-}
-console.log("User Message:", userMessage);
-//
-let userType = "subscriber";
-let userCategory;
+// if (isLoggedIn) {
+//     if (userRole === "admin") {
+//         userMessage = "Welcome, Admin!";
+//     } else {
+//         userMessage = "Welcome, User!";
+//     }
+// } else {
+//     userMessage = "Please log in to access the system.";
+// }
+// console.log("User Message:", userMessage);
+// //
+// let userType = "subscriber";
+// let userCategory;
 
 switch (userType) {
     case "admin":
@@ -42,7 +42,19 @@ switch (userType) {
         userCategory = "Unknown";
 }
 console.log("User Category:", userCategory);
+// //
+// let isAuthenticated = false;
+// let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+// console.log("Authentication Status:", authenticationStatus);
 //
-let isAuthenticated = false;
-let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
-console.log("Authentication Status:", authenticationStatus);
+
+
+let isAuthenticated = true;
+let authenticationStatus;
+
+if (isAuthenticated) {
+    authenticationStatus = "Authenticated";
+} else {
+    authenticationStatus = "Not Authenticated";
+}
+console.log("User is:", userType, "and is", authenticationStatus);
