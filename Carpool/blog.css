@@ -1,0 +1,84 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+/* Vars */
+:root{
+--container-color: rgb(53, 12, 53);
+--second-color: purple ;
+--text-color: cyan;
+--bg-color: white;
+}
+::selection{
+    background: var(--second-color);
+    color: var(--bg-color);
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+.container{
+    max-width: 1068px;
+    width: 100%;
+    margin: auto;
+}
+/* head */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 200;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+
+}
+.logo{
+    font-size: 1.5rem;
+    
+    font-weight: 600;
+    color: var(--text-color);
+}
+.logo span {
+    color: var(--second-color);
+}
+.login{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--second-color);
+    color: var(--bg-color);
+    cursor: pointer();
+}
+.login:hover{
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+/* Home */
+.home{
+    width: 100%;
+    min-height:440px;
+    background: var(--container-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+C:\Users\WillXI\coursera\Javascript\JSEssential\control_flow.html
