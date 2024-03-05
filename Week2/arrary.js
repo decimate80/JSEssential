@@ -1,9 +1,16 @@
 
-
-const fruits = ["apple", "banana", "orange", "pineapple"];
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
+for (let i = 0; i < grid.length; i++) {
+    for (let j = 0; j < grid[i].length; j++) {
+        console.log('Element at (${i}, ${j}: ${grid[i][j]}');
+    }
 }
+
+
+
+// const fruits = ["apple", "banana", "orange", "pineapple"];
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
 
 
 

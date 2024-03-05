@@ -1,0 +1,44 @@
+.seating-chart {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
+    justify-content: center;
+}
+.seat {
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    bottom: 1pxs #ccc;
+    cursor: pointer;
+}
+.available {
+    background-color: #00ff00;
+}
+.occupied {
+    background-color: #ff0000;
+}
+.selected {
+    background-color: #0000ff;
+}
+.seat:hover {
+    background-color: #0000ff;
+}
+.booked {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: white;;
+}
+.available {
+    background-color: #00ff00;
+}
+.select-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #0000ff;
+    color: white;
+    
+    border: none;
+    cursor: pointer;
+}
