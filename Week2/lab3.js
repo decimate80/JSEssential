@@ -1,3 +1,8 @@
+const list = document.getElementById("my-list");
+const newItem = document.createElement("li");
+newItem.textContent =" Item 3";
+list.appendChild(newItem);
+
 let books = [];
 
 function addBook() {
@@ -21,7 +26,8 @@ function addBook() {
 }
 
 function showbooks() {
-    const booksDiv = books.map((book, index) => `<h1>book Number: ${index + 1}</h1>
+const booksDiv = books.map((book, index) => `<h1>book Number: ${index + 1}
+    </h1>
   <P><strong>Book Name: </strong>${book.name}</P>
   <p><strong>Author Name:</strong> ${book.authorName} </p>
   <p><strong>Book Description:</strong> ${book.bookDescription}</p>
